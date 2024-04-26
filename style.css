@@ -1,0 +1,94 @@
+address{
+    color: blueviolet;
+    border: 2px solid tomato;
+    margin: 10px;
+}
+
+h1{
+    margin: 20;
+    padding: 10px;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-left: 2px solid black;
+  }
+
+a:hover, a:active {
+    background-color: red;
+  }
+
+#one{
+  background-color: transparent;
+  padding: 0px;
+  border: transparent;
+  color: #f44336;
+}
+
+#top{
+  background-color: rgb(8, 43, 107);
+  padding: 10px 15px;
+  border: 2 px solid wheat;
+  color: #f44336;
+  margin-left: 50%;
+}
+  
+.slider {
+  position: relative;
+  width: 800px;
+  height: 700px;
+  display: flex; /* add these lines */
+  margin-left: auto; /* to center align the image horizontally */
+  margin-right: auto;
+  /* border: 2px solid black; */
+  /* transition: opacity 1s ease-in-out; */
+  opacity: 1;
+}
+.slider img.active {
+  opacity: 0;
+}
+
+.slider img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+    align-self: center; /* add this line to center align the image vertically */
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slider button.prev {
+    left: 50px;
+    color: antiquewhite;
+    font-size: 36px;
+}
+.slider button.next {
+    right: 50px;
+    color:aliceblue;
+    font-size: 36px;
+}
+
+#vid{
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
+  padding: 0;
+  margin-left: 43%;
+  filter: brightness(100%);
+  filter: contrast(100%);
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+  border: 2 px solid midnightblue;
+}
